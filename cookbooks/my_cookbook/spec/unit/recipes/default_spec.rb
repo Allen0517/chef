@@ -18,6 +18,11 @@ describe 'my_cookbook::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'installs the package httpd' do
+      expect(chef_run).to install_package('httpd')
+    end
+
   end
 
   context 'When all attributes are default, on CentOS 7.4.1708' do
