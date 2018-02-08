@@ -1,0 +1,7 @@
+---
+last_error: 
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: C:/chef/cookbooks/my_cookbook/.kitchen/kitchen-vagrant/default-ubuntu-1604/.vagrant/machines/default/virtualbox/private_key
+last_action: verify

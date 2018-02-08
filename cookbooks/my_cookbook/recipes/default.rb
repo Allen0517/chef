@@ -13,13 +13,13 @@
 #   action :install
 # end
 
-package 'httpd'
+package 'apache2'
 
 file '/var/www/html/index.html' do
   content '<h1>Hello My_cookbook User</h1>'
 end
 
-service 'httpd' do
+service 'apache2' do
   action [:enable, :start]
 end
 
